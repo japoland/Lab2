@@ -81,60 +81,60 @@ for (var i = 0; i < button.length; i++) {
     button[i].addEventListener('click', function() {
         switch (this.innerHTML) {
             case "+":
-                {
-                    equationAdd(number.innerHTML, "+");
-                    clearNumber();
-                    break;
-                }
+            {
+                equationAdd(number.innerHTML, "+");
+                clearNumber();
+                break;
+            }
             case "-":
-                {
-                    equationAdd(number.innerHTML, "-");
-                    clearNumber();
-                    break;
-                }
+            {
+                equationAdd(number.innerHTML, "-");
+                clearNumber();
+                break;
+            }
 
             case "*":
-                {
-                    equationAdd(number.innerHTML, "*");
-                    clearNumber();
-                    break;
-                }
+            {
+                equationAdd(number.innerHTML, "*");
+                clearNumber();
+                break;
+            }
             case "/":
-                {
-                    equationAdd(number.innerHTML, "/");
-                    clearNumber();
-                    break;
-                }
+            {
+                equationAdd(number.innerHTML, "/");
+                clearNumber();
+                break;
+            }
 
             case "%":
-                {
-                    equationAdd(number.innerHTML, "%");
-                    clearNumber();
-                    break;
-                }
+            {
+                equationAdd(number.innerHTML, "%");
+                clearNumber();
+                break;
+            }
             case "Clear":
-                {
-                    clear();
-                    break;
+            {
+                clear();
+                break;
 
-                }
+            }
 
             case "=":
-                {
-                    equationAdd(number.innerHTML, "=");
-                    elementsArray.pop();
-                    calculate();
-                    number.innerHTML = elementsArray[0];
-                    equation.innerHTML = "";
-                    elementsArray.pop();
-                    break;
-                }
+            {
+                equationAdd(number.innerHTML, "=");
+                elementsArray.pop();
+                calculate();
+                number.innerHTML = elementsArray[0];
+                equation.innerHTML = "";
+                elementsArray.pop();
+                break;
+            }
 
             default:
-                {
-                    number.innerHTML += this.innerHTML;
-                    break;
-                };
+            {
+                number.innerHTML += this.innerHTML;
+                break;
+            };
 
         };
     });

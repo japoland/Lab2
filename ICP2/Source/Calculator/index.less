@@ -16,71 +16,70 @@
 	box-shadow: @shadowb;
 	*zoom: 1;
 
-#logo{
-	text-align: left;
-	margin: 10px;
-	font-weight: 600;
-	color: #eee;
+	#logo{
+		text-align: left;
+		margin: 10px;
+		font-weight: 600;
+		color: #eee;
+	}
+	.screen {
+		width:96%;
+		height:70px;
+		background: @screenColor;
+		margin:10px auto;
+		border-radius: 4px;
+		box-shadow: @shadow;
+
+		p { font-size: 20px;
+			color:#555;
+			text-align: right;
+			margin-right: 10px;
+		}
+
+		#equation {
+			font-size: 15px;
+		}
+
+		#number {
+			font-size: 25px;
+		}
+	}
+
+	.buttons {
+		width:96%;
+		height:400px;
+		margin:10px auto;
+		border-radius: 4px;
+
+		.button {
+			background: @buttonsColor;
+			float:left;
+			margin: 6px 9px;
+			height: 70px;
+			width: 70px;
+			box-shadow: @shadow;
+			font-size: 40px;
+			font-weight: 400;
+			color: #f9f9f9;
+			text-align: center;
+			padding-top: 8px;
+
+			&:hover{
+				box-shadow: @shadowh;
+				cursor: pointer;
+			}
+
+		}
+
+		.op {
+			margin-left:25px;
+		}
+
+		.clear {
+			float:none;
+			clear:both;
+			width:95%;
+			margin:0 auto;
+		}
+	}
 }
-.screen {
-	width:96%;
-	height:70px;
-	background: @screenColor;
-	margin:10px auto;
-	border-radius: 4px;
-	box-shadow: @shadow;
-
-	p { font-size: 20px;
-		color:#555;
-		text-align: right;
-		margin-right: 10px;
-	}
-
-	#equation {
-		font-size: 15px;
-	}
-
-	#number {
-		font-size: 25px;
-	}
-}
-
-.buttons {
-	width:96%;
-	height:400px;
-	margin:10px auto;
-	border-radius: 4px;
-
-	.button {
-	background: @buttonsColor;
-	float:left;
-	margin: 6px 9px;
-	height: 70px;
-	width: 70px;
-	box-shadow: @shadow;
-	font-size: 40px;
-	font-weight: 400;
-	color: #f9f9f9;
-	text-align: center;
-	padding-top: 8px;
-	
-	&:hover{
-		box-shadow: @shadowh;
-		cursor: pointer;
-	}
-
-	}
-
-	.op {
-	margin-left:25px;
-	}
-
-	.clear {
-	float:none;
-	clear:both;
-	width:95%;
-	margin:0 auto;
-	}	
-}
-}
-
