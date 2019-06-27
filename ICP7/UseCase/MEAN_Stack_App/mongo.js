@@ -60,7 +60,7 @@ app.get('/delete/:toBeDeleted_id', function (req, res) {
             res.write("Failed, Error connecting to Database");
             res.end();
         }
-        deleteDocument(db, req.query, function() {
+        deleteDocument(db, req, function() {
             res.write("Successfully deleted");
             res.end();
         });
@@ -96,8 +96,8 @@ var insertDocument = function(db, data, callback) {
 
 var deleteDocument = function(db, data, callback){
     //delete
-    db.collection('books').deleteOne(data, function(err, result){
-        console.log(data);
+    db.collection('books').deleteOne({"_id": ObjectID(data.params.toBeDeleted_id)}, function(err, result){
+        console.log(data.params);
 
         if(err)
         {
