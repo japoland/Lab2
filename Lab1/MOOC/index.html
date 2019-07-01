@@ -3,20 +3,19 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-<!--    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>-->
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="js/angular.min.js"></script>
     <script src="MOOC.js"></script>
     <script type="text/javascript" src="jquery.js"></script>
 
 </head>
-<body ng-app="app" ng-Controller="homeController">
+<body ng-app="app" ng-Controller="MOOCController">
     <h1>Premier Dog Training</h1>
     <a href="account.html"><button>Account Details</button></a>
-    <input type="text" ng-model="text" id="text"/>
+    <input type="text" ng-model="text" id="text" placeholder="Enter Login Name"/>
     <button ng-click="submit()">Submit</button>
 
-    <p>Logged in as: <script type="text/javascript">document.write(currentUser)</script></p>
+<!--    <p>Logged in as: </p>-->
 <br><br>
 <div class="row">
     <div class="col-md-4">

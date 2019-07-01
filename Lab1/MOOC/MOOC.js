@@ -1,6 +1,6 @@
 // var userName = document.getElementById("input");
 // var users = [];
-var currentUser="Guest";
+// var currentUser="Guest";
 // var currentIndex=users.indexOf("currentUser");
 //
 // function submit() {
@@ -30,8 +30,8 @@ var currentUser="Guest";
 // }
 var app = angular.module('app', []);
 
-homeController.controller('app', ['$scope', function ($scope) {
-    $scope.users = [{name: Guest, clicker: false, basic: false, intermediate: false, puppy: false, leash: false, agility: false}];
+app.controller('MOOCController', ['$scope', function ($scope) {
+    $scope.users = [{name: "Guest", clicker: false, basic: false, intermediate: false, puppy: false, leash: false, agility: false}];
 
     $scope.submit = function(){
         if ($scope.text){
