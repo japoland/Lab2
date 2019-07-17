@@ -1,0 +1,23 @@
+body {
+	/*background-image: url(/images/water.jpg);*/
+	background: #1D9C55;
+}
+
+.row {
+	display: flex;
+}
+
+.column {
+	flex: 50%;
+	padding-top: 80px;
+	padding-left: 80px;
+	text-align: left;
+}
+
+.footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	top: 450px;
+	width: 100%;
+}
