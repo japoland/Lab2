@@ -58,9 +58,6 @@ myapp.controller('addController',function($scope,$http){
         }
     }
 
-
-
-
 });
 
 
